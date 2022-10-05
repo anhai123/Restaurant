@@ -1,0 +1,64 @@
+$bg-white: 1;
+$font-style: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+.wrapper {
+    background-image: linear-gradient(to bottom right, rgba(107,70,193,1),rgba(192,86,33,1));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    
+}
+
+.SignInForm {
+    padding: 30px;
+    background-color: rgba(255,255,255,$bg-white);
+    border-radius: 0.75rem;
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+    margin: auto;
+    width: 400px;
+    font-family: "Gill Sans", sans-serif;
+
+    .label {
+        display: block;
+        margin-bottom: 5px;
+        
+    }
+
+    .input {
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 8px;
+    border: 1px solid #ccc !important;
+    border-radius: 0.75rem;
+    height: 4rem;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .remember{
+        margin-right: 10px;
+        margin-bottom: 24px;
+    }
+    .signInButton{
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-radius: 0.75rem;
+        background-color: blue;
+        color: rgb(252, 248, 248);
+        border-color: blue ;
+        margin-bottom: 24px;
+    }
+    .forgetPassword {
+        text-decoration: none;
+        display: flex;
+        right: 0px;
+        justify-content: flex-end;
+        color: blue;
+    }
+}
+
