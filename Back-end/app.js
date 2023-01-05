@@ -25,14 +25,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 require("./app/routes/auth.routes")(app);
 require("./app/routes/user.routes")(app);
 require("./app/routes/post.routes")(app);
-
+//`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`
 const db = require("./app/models");
 const Role = db.role;
 db.mongoose
-  .connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://my-restaurant:Fq61db3F9oJwhdY9@my-restaurant.znkjyyi.mongodb.net/?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => {
     console.log("Successfully connect to MongoDB.");
     initial();
