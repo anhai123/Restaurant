@@ -6,7 +6,7 @@ const port = process.env.PORT || 5000;
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const path = require("path");
-const multer = require("multer");
+
 // require('dotenv/config');
 const controller = require("./app/controllers/post.controller");
 var corsOptions = {
@@ -30,7 +30,7 @@ const db = require("./app/models");
 const Role = db.role;
 db.mongoose
   .connect(
-    "mongodb+srv://my-restaurant:Fq61db3F9oJwhdY9@my-restaurant.znkjyyi.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://my-restaurant:WOnz1C2AyWx2vKPs@my-restaurant.znkjyyi.mongodb.net/?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
